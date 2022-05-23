@@ -41,6 +41,10 @@ namespace TranslationDictionary.DAL.Concrete
                 throw new Exception("Deletion failed!");
             }
         }
+        public WordList Get(string firstWord)
+        {
+            return GetAll().FirstOrDefault(x=>x.firstWord==firstWord);
+        }
         public List<WordList> GetAll()
         {
             var _list = new List<WordList>();

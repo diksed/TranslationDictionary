@@ -1,8 +1,7 @@
 ﻿using TranslationDictionary.DAL.Concrete;
 using TranslationDictionary.DAL.Entities;
 
-Console.WriteLine("add - to add a new word\nupdate - for the word whose meaning you want to change\nlist - to see all the words\ndelete - for the word you want to delete\nquit - to exit");
-
+Console.WriteLine("add - to add a new word\nupdate - for the word whose meaning you want to change\nsearch - to search for the word in your dictionary\nlist - to see all the words\ndelete - for the word you want to delete\nquit - to exit");
 while (true)
 {
     Console.WriteLine("\nType the action you want to do! (/help for commands)");
@@ -10,6 +9,10 @@ while (true)
     if (action == "add" || action == "Add")
     {
         Create();
+    }
+    if(action == "search" || action == "Search")
+    {
+        Get();
     }
     if (action == "update" || action == "Update")
     {
@@ -45,12 +48,16 @@ static void Create()
     };
     new WordsDal().Add(word);
 }
-
 static void GetAll()
 {
     new WordsDal().GetAll().ForEach(w => Console.WriteLine(w));
 }
-
+static void Get()
+{
+    Console.WriteLine("Which word are you looking for?");
+    string firstWord = Console.ReadLine();
+    Console.WriteLine(new WordsDal().Get(firstWord));
+}
 static void Update()
 {
     Console.WriteLine("Type the word you want to change the meaning of :");
@@ -64,7 +71,6 @@ static void Update()
     };
     new WordsDal().Update(word);
 }
-
 static void Delete()
 {
     Console.WriteLine("Type the word you want to delete :");

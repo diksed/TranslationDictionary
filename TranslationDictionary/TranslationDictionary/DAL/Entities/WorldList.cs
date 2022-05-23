@@ -12,8 +12,9 @@ namespace TranslationDictionary.DAL.Entities
         public string firstWord { get; set; }
         public string secondWord { get; set; }
         public override string ToString()
-        {
-            return $"{firstWord,-5} == {secondWord,-10}";
+        { 
+            return $"{firstWord} == {secondWord}";
+
         }
     }
 }

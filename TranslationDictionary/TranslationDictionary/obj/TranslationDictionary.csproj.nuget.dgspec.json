@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\Desktop\\TranslationDictionary\\TranslationDictionary\\TranslationDictionary.csproj": {}
+    "D:\\Github'a Yüklediğim Projeler\\TranslationDictionary\\TranslationDictionary\\TranslationDictionary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\Desktop\\TranslationDictionary\\TranslationDictionary\\TranslationDictionary.csproj": {
+    "D:\\Github'a Yüklediğim Projeler\\TranslationDictionary\\TranslationDictionary\\TranslationDictionary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Desktop\\TranslationDictionary\\TranslationDictionary\\TranslationDictionary.csproj",
+        "projectUniqueName": "D:\\Github'a Yüklediğim Projeler\\TranslationDictionary\\TranslationDictionary\\TranslationDictionary.csproj",
         "projectName": "TranslationDictionary",
-        "projectPath": "C:\\Users\\HP\\Desktop\\TranslationDictionary\\TranslationDictionary\\TranslationDictionary.csproj",
+        "projectPath": "D:\\Github'a Yüklediğim Projeler\\TranslationDictionary\\TranslationDictionary\\TranslationDictionary.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Desktop\\TranslationDictionary\\TranslationDictionary\\obj\\",
+        "outputPath": "D:\\Github'a Yüklediğim Projeler\\TranslationDictionary\\TranslationDictionary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +43,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.5, )"
+            },
+            "System.Runtime": {
+              "target": "Package",
+              "version": "[4.3.1, )"
             }
           },
           "imports": [
