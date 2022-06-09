@@ -17,4 +17,4 @@
 - You can use it to take small notes.
 
 
->  Regards, diksed.
+>  Best regards, diksed.
